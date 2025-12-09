@@ -17,14 +17,30 @@ def download_tistory_posts():
     blog_url = os.environ.get('TISTORY_BLOG_URL', '')
     
     if not blog_url:
-        print("TISTORY_BLOG_URL 환경변수가 설정되지 않았습니다.")
+        print("❌ TISTORY_BLOG_URL 환경변수가 설정되지 않았습니다.")
         return
     
-    # RSS 피드 URL
+    # RSS 피드 URL (끝에 슬래시 제거)
+    blog_url = blog_url.rstrip('/')
     rss_url = f"{blog_url}/rss"
     
-    print(f"RSS 피드 확인: {rss_url}")
+    print(f"✅ 블로그 URL: {blog_url}")
+    print(f"✅ RSS 피드 확인: {rss_url}")
+    
     feed = feedparser.parse(rss_url)
+    
+    # RSS 피드 상태 확인
+    print(f"✅ RSS 피드 상태: {feed.get('status', 'unknown')}")
+    print(f"✅ 피드 버전: {feed.get('version', 'unknown')}")
+    print(f"✅ 총 엔트리 수: {len(feed.entries)}")
+    
+    if not feed.entries:
+        print("❌ RSS 피드에서 포스트를 찾을 수 없습니다.")
+        print(f"   피드 제목: {feed.feed.get('title', 'N/A')}")
+        print(f"   에러 여부: {feed.get('bozo', False)}")
+        if feed.get('bozo'):
+            print(f"   에러 내용: {feed.get('bozo_exception', 'N/A')}")
+        return
     
     # 백업 디렉토리 생성
     backup_dir = Path('posts')
