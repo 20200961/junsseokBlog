@@ -22,34 +22,105 @@ def sanitize_category(category):
     category = re.sub(r'\s+', '-', category)
     return category[:50]  # 폴더명 길이 제한
 
+def reorganize_existing_posts(metadata):
+    """기존 포스트를 카테고리별 폴더로 재정리"""
+    backup_dir = Path('posts')
+    moved_count = 0
+    
+    print("\n📁 기존 포스트 재정리 시작...")
+    
+    for post_id, post in metadata.items():
+        category = post.get('category', 'uncategorized')
+        filename = post.get('filename', '')
+        old_folder = post.get('folder', None)
+        
+        if not filename:
+            continue
+        
+        # 새 카테고리 폴더 경로
+        safe_category = sanitize_category(category)
+        category_dir = backup_dir / safe_category
+        category_dir.mkdir(exist_ok=True)
+        
+        # 현재 파일 위치 찾기
+        old_path = None
+        
+        # 1. 메타데이터에 저장된 경로 확인
+        if old_folder:
+            old_path = backup_dir / old_folder / filename
+        
+        # 2. posts 바로 아래에 있는지 확인
+        if not old_path or not old_path.exists():
+            old_path = backup_dir / filename
+        
+        # 3. uncategorized 폴더 확인
+        if not old_path.exists():
+            old_path = backup_dir / 'uncategorized' / filename
+        
+        # 파일이 존재하고, 올바른 위치가 아니면 이동
+        new_path = category_dir / filename
+        
+        if old_path.exists() and old_path != new_path:
+            try:
+                # 파일 이동
+                import shutil
+                shutil.move(str(old_path), str(new_path))
+                
+                # 메타데이터 업데이트
+                metadata[post_id]['folder'] = safe_category
+                
+                moved_count += 1
+                print(f"이동: {filename} → {safe_category}/")
+            except Exception as e:
+                print(f"이동 실패 ({filename}): {e}")
+    
+    print(f"\n총 {moved_count}개의 파일을 재정리했습니다.")
+    
+    # 빈 폴더 정리
+    cleanup_empty_folders(backup_dir)
+    
+    return moved_count
+
+def cleanup_empty_folders(backup_dir):
+    """빈 폴더 삭제"""
+    for item in backup_dir.iterdir():
+        if item.is_dir() and item.name != '.git':
+            # 폴더가 비어있으면 삭제
+            try:
+                if not any(item.iterdir()):
+                    item.rmdir()
+                    print(f"  🗑️  빈 폴더 삭제: {item.name}/")
+            except:
+                pass
+
 def download_tistory_posts():
     """Tistory RSS에서 포스트 다운로드"""
     blog_url = os.environ.get('TISTORY_BLOG_URL', '')
     
     if not blog_url:
-        print("❌ TISTORY_BLOG_URL 환경변수가 설정되지 않았습니다.")
+        print("TISTORY_BLOG_URL 환경변수가 설정되지 않았습니다.")
         return
     
     # RSS 피드 URL (끝에 슬래시 제거)
     blog_url = blog_url.rstrip('/')
     rss_url = f"{blog_url}/rss"
     
-    print(f"✅ 블로그 URL: {blog_url}")
-    print(f"✅ RSS 피드 확인: {rss_url}")
+    print(f"블로그 URL: {blog_url}")
+    print(f"RSS 피드 확인: {rss_url}")
     
     feed = feedparser.parse(rss_url)
     
     # RSS 피드 상태 확인
-    print(f"✅ RSS 피드 상태: {feed.get('status', 'unknown')}")
-    print(f"✅ 피드 버전: {feed.get('version', 'unknown')}")
-    print(f"✅ 총 엔트리 수: {len(feed.entries)}")
+    print(f"RSS 피드 상태: {feed.get('status', 'unknown')}")
+    print(f"피드 버전: {feed.get('version', 'unknown')}")
+    print(f"총 엔트리 수: {len(feed.entries)}")
     
     if not feed.entries:
-        print("❌ RSS 피드에서 포스트를 찾을 수 없습니다.")
-        print(f"   피드 제목: {feed.feed.get('title', 'N/A')}")
-        print(f"   에러 여부: {feed.get('bozo', False)}")
+        print("RSS 피드에서 포스트를 찾을 수 없습니다.")
+        print(f"피드 제목: {feed.feed.get('title', 'N/A')}")
+        print(f"에러 여부: {feed.get('bozo', False)}")
         if feed.get('bozo'):
-            print(f"   에러 내용: {feed.get('bozo_exception', 'N/A')}")
+            print(f"에러 내용: {feed.get('bozo_exception', 'N/A')}")
         return
     
     # 백업 디렉토리 생성
@@ -67,13 +138,10 @@ def download_tistory_posts():
         metadata = {}
     
     new_posts = 0
+    updated_posts = 0
     
     for entry in feed.entries:
         post_id = entry.get('id', entry.link)
-        
-        # 이미 백업된 포스트는 건너뛰기
-        if post_id in metadata:
-            continue
         
         # 포스트 정보 추출
         title = entry.get('title', 'Untitled')
@@ -82,19 +150,10 @@ def download_tistory_posts():
         link = entry.get('link', '')
         
         # 티스토리 카테고리 추출
-        # feedparser에서는 entry.tags 리스트로 카테고리를 제공
         category = 'uncategorized'
         
         if hasattr(entry, 'tags') and entry.tags:
-            # 첫 번째 태그를 카테고리로 사용
             category = entry.tags[0].get('term', 'uncategorized')
-            print(f"  카테고리 발견: {category}")
-        
-        # 디버그: 사용 가능한 모든 속성 출력 (처음 한 번만)
-        if new_posts == 0:
-            print(f"\n[디버그] 엔트리 속성: {dir(entry)}")
-            if hasattr(entry, 'tags'):
-                print(f"[디버그] 태그 정보: {entry.tags}")
         
         # 카테고리 폴더 생성
         safe_category = sanitize_category(category)
@@ -115,6 +174,19 @@ def download_tistory_posts():
         
         filename = f"{date_str}_{safe_title}.md"
         filepath = category_dir / filename
+        
+        # 이미 백업된 포스트인지 확인
+        if post_id in metadata:
+            # 카테고리가 변경되었는지 확인
+            old_category = metadata[post_id].get('category', '')
+            if old_category != category:
+                print(f"📝 카테고리 변경 감지: {title}")
+                print(f"   {old_category} → {category}")
+                updated_posts += 1
+            else:
+                continue
+        else:
+            new_posts += 1
         
         # 마크다운 형식으로 저장
         with open(filepath, 'w', encoding='utf-8') as f:
@@ -137,20 +209,26 @@ def download_tistory_posts():
             'backed_up_at': datetime.now().isoformat()
         }
         
-        new_posts += 1
-        print(f"새 포스트 백업: [{category}] {title}")
+        if post_id not in metadata or updated_posts > 0:
+            print(f"새 포스트 백업: [{category}] {title}")
+    
+    # 기존 파일들 재정리
+    moved_count = reorganize_existing_posts(metadata)
     
     # 메타데이터 저장
     with open(metadata_file, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, ensure_ascii=False, indent=2)
     
-    print(f"\n총 {new_posts}개의 새 포스트를 백업했습니다.")
+    print(f"\n백업 완료!")
+    print(f"   - 새 포스트: {new_posts}개")
+    print(f"   - 업데이트된 포스트: {updated_posts}개")
+    print(f"   - 재정리된 파일: {moved_count}개")
     
     # README 업데이트
     update_readme(metadata)
 
 def update_readme(metadata):
-    """README 파일 생성/업데이트 - 최신순, 카테고리별 정렬"""
+    """README 파일 생성/업데이트 - 카테고리별로 그룹화하고 최신순 정렬"""
     readme_path = Path('README.md')
     
     # 카테고리별로 포스트 그룹화
@@ -179,6 +257,17 @@ def update_readme(metadata):
         f.write(f"총 {len(metadata)}개의 포스트가 백업되었습니다.\n\n")
         f.write(f"마지막 업데이트: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         
+        # 목차
+        f.write("## 📑 목차\n\n")
+        f.write("- [최근 포스트](#-최근-포스트-최신순)\n")
+        f.write("- [카테고리별 포스트](#-카테고리별-포스트)\n")
+        
+        # 카테고리 목차
+        for category in sorted(posts_by_category.keys()):
+            category_anchor = category.lower().replace(' ', '-')
+            f.write(f"  - [{category} ({len(posts_by_category[category])}개)](#-{category_anchor})\n")
+        f.write("- [통계](#-통계)\n\n")
+        
         # 전체 포스트 목록 (최신순)
         f.write("## 📝 최근 포스트 (최신순)\n\n")
         for post in all_posts_sorted[:10]:  # 최근 10개만 표시
@@ -196,15 +285,17 @@ def update_readme(metadata):
         # 카테고리별 포스트 목록
         f.write("\n## 📂 카테고리별 포스트\n\n")
         
-        # 카테고리를 포스트 개수로 정렬
+        # 카테고리를 알파벳순으로 정렬 (uncategorized는 맨 뒤로)
         sorted_categories = sorted(
             posts_by_category.items(),
-            key=lambda x: len(x[1]),
-            reverse=True
+            key=lambda x: (x[0] == 'uncategorized', x[0])
         )
         
         for category, posts in sorted_categories:
-            f.write(f"### {category} ({len(posts)}개)\n\n")
+            # 카테고리 앵커 생성
+            category_anchor = category.lower().replace(' ', '-')
+            f.write(f"### 📌 {category}\n\n")
+            f.write(f"> {len(posts)}개의 포스트\n\n")
             
             for post in posts:
                 title = post.get('title', 'Untitled')
@@ -218,13 +309,15 @@ def update_readme(metadata):
                 f.write(f"  - 📁 `posts/{folder}/{filename}`\n\n")
         
         # 통계
-        f.write("\n## 통계\n\n")
-        f.write(f"- 총 포스트: {len(metadata)}개\n")
-        f.write(f"- 카테고리: {len(posts_by_category)}개\n\n")
+        f.write("\n## 📊 통계\n\n")
+        f.write(f"- 총 포스트: **{len(metadata)}개**\n")
+        f.write(f"- 총 카테고리: **{len(posts_by_category)}개**\n\n")
         
         f.write("### 카테고리별 포스트 수\n\n")
+        f.write("| 카테고리 | 포스트 수 |\n")
+        f.write("|---------|----------|\n")
         for category, posts in sorted_categories:
-            f.write(f"- {category}: {len(posts)}개\n")
+            f.write(f"| {category} | {len(posts)}개 |\n")
 
 if __name__ == '__main__':
     download_tistory_posts()
