@@ -2,9 +2,15 @@ name: Tistory Backup
 
 on:
   schedule:
-    # 매일 자정에 실행 (한국 시간 기준 오전 9시)
-    - cron: '0 0 * * *'
+    # 1시간마다 실행
+    - cron: '0 * * * *'
   workflow_dispatch: # 수동 실행 가능
+  push:
+    branches:
+      - main  # main 브랜치에 푸시될 때도 실행 (테스트용)
+
+permissions:
+  contents: write
 
 jobs:
   backup:
@@ -12,18 +18,24 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.11'
     
     - name: Install dependencies
       run: |
         pip install feedparser requests
+    
+    - name: Check environment
+      run: |
+        echo "TISTORY_BLOG_URL is set: ${{ secrets.TISTORY_BLOG_URL != '' }}"
+        ls -la
     
     - name: Backup Tistory posts
       env:
@@ -35,6 +47,10 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add .
-        git diff --staged --quiet || git commit -m "Auto backup: $(date +'%Y-%m-%d %H:%M:%S')"
-        git push
+        git add -A
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto backup: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
