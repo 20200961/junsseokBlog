@@ -2,7 +2,7 @@
 
 총 52개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2025-12-09 08:44:54
+마지막 업데이트: 2025-12-09 08:49:02
 
 ## 📑 목차
 
@@ -10,16 +10,16 @@
 - [카테고리별 포스트](#-카테고리별-포스트)
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
-  - [uncategorized (6개)](#-uncategorized)
-  - [면접대비 (8개)](#-면접대비)
-  - [수강 일지 (35개)](#-수강-일지)
+  - [uncategorized (4개)](#-uncategorized)
+  - [면접대비 (9개)](#-면접대비)
+  - [수강 일지 (36개)](#-수강-일지)
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
 
-- **[uncategorized]** [Java Collections Framework](https://junsseok.tistory.com/56)
+- **[면접대비]** [Java Collections Framework](https://junsseok.tistory.com/56)
   - 📅 Tue, 9 Dec 2025 17:30:48 +0900
-  - 📁 `posts/uncategorized/2025-12-09_Java-Collections-Framework.md`
+  - 📁 `posts/면접대비/2025-12-09_Java-Collections-Framework.md`
 
 - **[면접대비]** [SOLID원칙](https://junsseok.tistory.com/52)
   - 📅 Fri, 5 Dec 2025 17:28:57 +0900
@@ -82,7 +82,11 @@
 
 ### 📌 면접대비
 
-> 8개의 포스트
+> 9개의 포스트
+
+- [Java Collections Framework](https://junsseok.tistory.com/56)
+  - 📅 Tue, 9 Dec 2025 17:30:48 +0900
+  - 📁 `posts/면접대비/2025-12-09_Java-Collections-Framework.md`
 
 - [SOLID원칙](https://junsseok.tistory.com/52)
   - 📅 Fri, 5 Dec 2025 17:28:57 +0900
@@ -118,11 +122,15 @@
 
 ### 📌 수강 일지
 
-> 35개의 포스트
+> 36개의 포스트
 
 - [GYMHUB 세미 프로젝트(10/23-11/20) 후기](https://junsseok.tistory.com/40)
   - 📅 Fri, 21 Nov 2025 15:03:53 +0900
   - 📁 `posts/수강-일지/2025-11-21_GYMHUB-세미-프로젝트(1023-1120)-후기.md`
+
+- [세미 프로젝트 - 4](https://junsseok.tistory.com/39)
+  - 📅 Mon, 3 Nov 2025 17:43:12 +0900
+  - 📁 `posts/수강-일지/2025-11-03_세미-프로젝트---4.md`
 
 - [세미 프로젝트 - 3](https://junsseok.tistory.com/38)
   - 📅 Tue, 28 Oct 2025 17:44:51 +0900
@@ -262,19 +270,11 @@
 
 ### 📌 uncategorized
 
-> 6개의 포스트
-
-- [Java Collections Framework](https://junsseok.tistory.com/56)
-  - 📅 Tue, 9 Dec 2025 17:30:48 +0900
-  - 📁 `posts/uncategorized/2025-12-09_Java-Collections-Framework.md`
+> 4개의 포스트
 
 - [리액트 실습(유저 관리)](https://junsseok.tistory.com/45)
   - 📅 Thu, 27 Nov 2025 17:49:27 +0900
   - 📁 `posts/uncategorized/2025-11-27_리액트-실습(유저-관리).md`
-
-- [세미 프로젝트 - 4](https://junsseok.tistory.com/39)
-  - 📅 Mon, 3 Nov 2025 17:43:12 +0900
-  - 📁 `posts/uncategorized/2025-11-03_세미-프로젝트---4.md`
 
 - [수강일지 깃허브 주소](https://junsseok.tistory.com/notice/25)
   - 📅 Tue, 30 Sep 2025 17:40:46 +0900
@@ -300,6 +300,6 @@
 |---------|----------|
 | Java Script | 1개 |
 | React | 2개 |
-| 면접대비 | 8개 |
-| 수강 일지 | 35개 |
-| uncategorized | 6개 |
+| 면접대비 | 9개 |
+| 수강 일지 | 36개 |
+| uncategorized | 4개 |
