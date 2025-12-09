@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 50개의 포스트가 백업되었습니다.
+총 51개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2025-12-09 08:01:25
+마지막 업데이트: 2025-12-09 08:03:46
 
 ## 포스트 목록
 
@@ -22,6 +22,8 @@
   - 백업 파일: `posts/2025-09-17_JavaScript-2일차.md`
 - [JSP 홈페이지 만들기 -4](https://junsseok.tistory.com/30) - Wed, 15 Oct 2025 17:34:45 +0900
   - 백업 파일: `posts/2025-10-15_JSP-홈페이지-만들기--4.md`
+- [123](https://junsseok.tistory.com/55) - Tue, 9 Dec 2025 17:03:02 +0900
+  - 백업 파일: `posts/2025-12-09_123.md`
 - [Java Collections Framework](https://junsseok.tistory.com/54) - Tue, 9 Dec 2025 16:44:05 +0900
   - 백업 파일: `posts/2025-12-09_Java-Collections-Framework.md`
 - [Day9](https://junsseok.tistory.com/8) - Tue, 5 Aug 2025 17:24:48 +0900
