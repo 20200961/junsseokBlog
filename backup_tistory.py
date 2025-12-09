@@ -4,6 +4,7 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
+from collections import defaultdict
 
 def sanitize_filename(title):
     """파일명으로 사용할 수 있도록 제목 정리"""
@@ -11,6 +12,15 @@ def sanitize_filename(title):
     title = re.sub(r'[<>:"/\\|?*]', '', title)
     title = re.sub(r'\s+', '-', title)
     return title[:100]  # 파일명 길이 제한
+
+def sanitize_category(category):
+    """카테고리명을 폴더명으로 사용할 수 있도록 정리"""
+    if not category:
+        return "uncategorized"
+    # 특수문자 제거 및 공백을 하이픈으로 변경
+    category = re.sub(r'[<>:"/\\|?*]', '', category)
+    category = re.sub(r'\s+', '-', category)
+    return category[:50]  # 폴더명 길이 제한
 
 def download_tistory_posts():
     """Tistory RSS에서 포스트 다운로드"""
@@ -71,6 +81,26 @@ def download_tistory_posts():
         content = entry.get('description', '')
         link = entry.get('link', '')
         
+        # 티스토리 카테고리 추출
+        # feedparser에서는 entry.tags 리스트로 카테고리를 제공
+        category = 'uncategorized'
+        
+        if hasattr(entry, 'tags') and entry.tags:
+            # 첫 번째 태그를 카테고리로 사용
+            category = entry.tags[0].get('term', 'uncategorized')
+            print(f"  카테고리 발견: {category}")
+        
+        # 디버그: 사용 가능한 모든 속성 출력 (처음 한 번만)
+        if new_posts == 0:
+            print(f"\n[디버그] 엔트리 속성: {dir(entry)}")
+            if hasattr(entry, 'tags'):
+                print(f"[디버그] 태그 정보: {entry.tags}")
+        
+        # 카테고리 폴더 생성
+        safe_category = sanitize_category(category)
+        category_dir = backup_dir / safe_category
+        category_dir.mkdir(exist_ok=True)
+        
         # 파일명 생성
         safe_title = sanitize_filename(title)
         
@@ -78,15 +108,18 @@ def download_tistory_posts():
         try:
             pub_date = datetime.strptime(published, '%a, %d %b %Y %H:%M:%S %z')
             date_str = pub_date.strftime('%Y-%m-%d')
+            timestamp = pub_date.timestamp()
         except:
             date_str = datetime.now().strftime('%Y-%m-%d')
+            timestamp = datetime.now().timestamp()
         
         filename = f"{date_str}_{safe_title}.md"
-        filepath = backup_dir / filename
+        filepath = category_dir / filename
         
         # 마크다운 형식으로 저장
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(f"# {title}\n\n")
+            f.write(f"**카테고리**: {category}\n\n")
             f.write(f"**작성일**: {published}\n\n")
             f.write(f"**원문 링크**: {link}\n\n")
             f.write("---\n\n")
@@ -95,14 +128,17 @@ def download_tistory_posts():
         # 메타데이터 업데이트
         metadata[post_id] = {
             'title': title,
+            'category': category,
             'published': published,
+            'timestamp': timestamp,
             'link': link,
             'filename': filename,
+            'folder': safe_category,
             'backed_up_at': datetime.now().isoformat()
         }
         
         new_posts += 1
-        print(f"새 포스트 백업: {title}")
+        print(f"새 포스트 백업: [{category}] {title}")
     
     # 메타데이터 저장
     with open(metadata_file, 'w', encoding='utf-8') as f:
@@ -114,30 +150,81 @@ def download_tistory_posts():
     update_readme(metadata)
 
 def update_readme(metadata):
-    """README 파일 생성/업데이트"""
+    """README 파일 생성/업데이트 - 최신순, 카테고리별 정렬"""
     readme_path = Path('README.md')
+    
+    # 카테고리별로 포스트 그룹화
+    posts_by_category = defaultdict(list)
+    
+    for post in metadata.values():
+        category = post.get('category', 'uncategorized')
+        posts_by_category[category].append(post)
+    
+    # 각 카테고리 내에서 최신순 정렬
+    for category in posts_by_category:
+        posts_by_category[category].sort(
+            key=lambda x: x.get('timestamp', 0),
+            reverse=True  # 최신순
+        )
+    
+    # 전체 포스트를 최신순으로 정렬
+    all_posts_sorted = sorted(
+        metadata.values(),
+        key=lambda x: x.get('timestamp', 0),
+        reverse=True  # 최신순
+    )
     
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write("# Tistory 블로그 백업\n\n")
         f.write(f"총 {len(metadata)}개의 포스트가 백업되었습니다.\n\n")
         f.write(f"마지막 업데이트: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
-        f.write("## 포스트 목록\n\n")
         
-        # 날짜순 정렬
-        sorted_posts = sorted(
-            metadata.values(), 
-            key=lambda x: x.get('published', ''), 
-            reverse=True
-        )
-        
-        for post in sorted_posts:
+        # 전체 포스트 목록 (최신순)
+        f.write("## 📝 최근 포스트 (최신순)\n\n")
+        for post in all_posts_sorted[:10]:  # 최근 10개만 표시
             title = post.get('title', 'Untitled')
             link = post.get('link', '')
             published = post.get('published', '')
+            category = post.get('category', 'uncategorized')
+            folder = post.get('folder', 'uncategorized')
             filename = post.get('filename', '')
             
-            f.write(f"- [{title}]({link}) - {published}\n")
-            f.write(f"  - 백업 파일: `posts/{filename}`\n")
+            f.write(f"- **[{category}]** [{title}]({link})\n")
+            f.write(f"  - 📅 {published}\n")
+            f.write(f"  - 📁 `posts/{folder}/{filename}`\n\n")
+        
+        # 카테고리별 포스트 목록
+        f.write("\n## 📂 카테고리별 포스트\n\n")
+        
+        # 카테고리를 포스트 개수로 정렬
+        sorted_categories = sorted(
+            posts_by_category.items(),
+            key=lambda x: len(x[1]),
+            reverse=True
+        )
+        
+        for category, posts in sorted_categories:
+            f.write(f"### {category} ({len(posts)}개)\n\n")
+            
+            for post in posts:
+                title = post.get('title', 'Untitled')
+                link = post.get('link', '')
+                published = post.get('published', '')
+                folder = post.get('folder', 'uncategorized')
+                filename = post.get('filename', '')
+                
+                f.write(f"- [{title}]({link})\n")
+                f.write(f"  - 📅 {published}\n")
+                f.write(f"  - 📁 `posts/{folder}/{filename}`\n\n")
+        
+        # 통계
+        f.write("\n## 통계\n\n")
+        f.write(f"- 총 포스트: {len(metadata)}개\n")
+        f.write(f"- 카테고리: {len(posts_by_category)}개\n\n")
+        
+        f.write("### 카테고리별 포스트 수\n\n")
+        for category, posts in sorted_categories:
+            f.write(f"- {category}: {len(posts)}개\n")
 
 if __name__ == '__main__':
     download_tistory_posts()
