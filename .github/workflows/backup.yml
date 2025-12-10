@@ -1,5 +1,4 @@
 name: Tistory Backup
-
 on:
   schedule:
     # 매일 오후 11:55 KST (14:55 UTC)
