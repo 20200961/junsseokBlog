@@ -512,5 +512,25 @@
     "filename": "2025-12-09_Java-Collections-Framework.md",
     "folder": "면접대비",
     "backed_up_at": "2025-12-09T08:49:02.321430"
+  },
+  "https://junsseok.tistory.com/58": {
+    "title": "자바의 제네릭을 사용하는 이유",
+    "category": "면접대비",
+    "published": "Wed, 10 Dec 2025 17:31:51 +0900",
+    "timestamp": 1765355511.0,
+    "link": "https://junsseok.tistory.com/58",
+    "filename": "2025-12-10_자바의-제네릭을-사용하는-이유.md",
+    "folder": "면접대비",
+    "backed_up_at": "2025-12-10T15:01:52.947153"
+  },
+  "https://junsseok.tistory.com/57": {
+    "title": "티스토리 GitHub 자동 커밋",
+    "category": "개발",
+    "published": "Wed, 10 Dec 2025 17:17:05 +0900",
+    "timestamp": 1765354625.0,
+    "link": "https://junsseok.tistory.com/57",
+    "filename": "2025-12-10_티스토리-GitHub-자동-커밋.md",
+    "folder": "개발",
+    "backed_up_at": "2025-12-10T15:01:52.947353"
   }
 }
