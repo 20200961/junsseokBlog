@@ -138,13 +138,13 @@
   },
   "https://junsseok.tistory.com/39": {
     "title": "세미 프로젝트 - 4",
-    "category": "uncategorized",
+    "category": "수강 일지",
     "published": "Mon, 3 Nov 2025 17:43:12 +0900",
     "timestamp": 1762159392.0,
     "link": "https://junsseok.tistory.com/39",
     "filename": "2025-11-03_세미-프로젝트---4.md",
-    "folder": "uncategorized",
-    "backed_up_at": "2025-12-09T08:44:54.585746"
+    "folder": "수강-일지",
+    "backed_up_at": "2025-12-12T08:24:38.189923"
   },
   "https://junsseok.tistory.com/38": {
     "title": "세미 프로젝트 - 3",
@@ -505,12 +505,52 @@
   },
   "https://junsseok.tistory.com/56": {
     "title": "Java Collections Framework",
-    "category": "uncategorized",
+    "category": "면접대비",
     "published": "Tue, 9 Dec 2025 17:30:48 +0900",
     "timestamp": 1765269048.0,
     "link": "https://junsseok.tistory.com/56",
     "filename": "2025-12-09_Java-Collections-Framework.md",
-    "folder": "uncategorized",
-    "backed_up_at": "2025-12-09T08:35:31.019632"
+    "folder": "면접대비",
+    "backed_up_at": "2025-12-12T08:24:38.188992"
+  },
+  "https://junsseok.tistory.com/60": {
+    "title": "자바 빌더 패턴(Builder Pattern)",
+    "category": "면접대비",
+    "published": "Fri, 12 Dec 2025 17:18:55 +0900",
+    "timestamp": 1765527535.0,
+    "link": "https://junsseok.tistory.com/60",
+    "filename": "2025-12-12_자바-빌더-패턴(Builder-Pattern).md",
+    "folder": "면접대비",
+    "backed_up_at": "2025-12-12T08:24:38.188323"
+  },
+  "https://junsseok.tistory.com/59": {
+    "title": "자바의 접근제어자",
+    "category": "면접대비",
+    "published": "Thu, 11 Dec 2025 16:48:45 +0900",
+    "timestamp": 1765439325.0,
+    "link": "https://junsseok.tistory.com/59",
+    "filename": "2025-12-11_자바의-접근제어자.md",
+    "folder": "면접대비",
+    "backed_up_at": "2025-12-12T08:24:38.188512"
+  },
+  "https://junsseok.tistory.com/58": {
+    "title": "자바의 제네릭을 사용하는 이유",
+    "category": "면접대비",
+    "published": "Wed, 10 Dec 2025 17:31:51 +0900",
+    "timestamp": 1765355511.0,
+    "link": "https://junsseok.tistory.com/58",
+    "filename": "2025-12-10_자바의-제네릭을-사용하는-이유.md",
+    "folder": "면접대비",
+    "backed_up_at": "2025-12-12T08:24:38.188658"
+  },
+  "https://junsseok.tistory.com/57": {
+    "title": "티스토리 GitHub 자동 커밋",
+    "category": "개발",
+    "published": "Wed, 10 Dec 2025 17:17:05 +0900",
+    "timestamp": 1765354625.0,
+    "link": "https://junsseok.tistory.com/57",
+    "filename": "2025-12-10_티스토리-GitHub-자동-커밋.md",
+    "folder": "개발",
+    "backed_up_at": "2025-12-12T08:24:38.188842"
   }
 }
