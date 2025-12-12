@@ -542,5 +542,15 @@
     "filename": "2025-12-11_자바의-접근제어자.md",
     "folder": "면접대비",
     "backed_up_at": "2025-12-11T14:59:42.909735"
+  },
+  "https://junsseok.tistory.com/60": {
+    "title": "자바 빌더 패턴(Builder Pattern)",
+    "category": "면접대비",
+    "published": "Fri, 12 Dec 2025 17:18:55 +0900",
+    "timestamp": 1765527535.0,
+    "link": "https://junsseok.tistory.com/60",
+    "filename": "2025-12-12_자바-빌더-패턴(Builder-Pattern).md",
+    "folder": "면접대비",
+    "backed_up_at": "2025-12-12T08:19:28.048220"
   }
 }
