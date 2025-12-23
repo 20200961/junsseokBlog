@@ -602,5 +602,15 @@
     "filename": "2025-12-22_국비-20251222-피드백.md",
     "folder": "uncategorized",
     "backed_up_at": "2025-12-22T14:59:16.188860"
+  },
+  "https://junsseok.tistory.com/67": {
+    "title": "IoC와 DI",
+    "category": "Spring Boot",
+    "published": "Tue, 23 Dec 2025 17:30:24 +0900",
+    "timestamp": 1766478624.0,
+    "link": "https://junsseok.tistory.com/67",
+    "filename": "2025-12-23_IoC와-DI.md",
+    "folder": "Spring-Boot",
+    "backed_up_at": "2025-12-23T14:59:06.834514"
   }
 }

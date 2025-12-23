@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 61개의 포스트가 백업되었습니다.
+총 62개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2025-12-22 14:59:16
+마지막 업데이트: 2025-12-23 14:59:06
 
 ## 📑 목차
 
@@ -10,6 +10,7 @@
 - [카테고리별 포스트](#-카테고리별-포스트)
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
+  - [Spring Boot (1개)](#-spring-boot)
   - [uncategorized (6개)](#-uncategorized)
   - [개발 (1개)](#-개발)
   - [면접대비 (15개)](#-면접대비)
@@ -17,6 +18,10 @@
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[Spring Boot]** [IoC와 DI](https://junsseok.tistory.com/67)
+  - 📅 Tue, 23 Dec 2025 17:30:24 +0900
+  - 📁 `posts/Spring-Boot/2025-12-23_IoC와-DI.md`
 
 - **[uncategorized]** [국비 2025/12/22 피드백](https://junsseok.tistory.com/66)
   - 📅 Mon, 22 Dec 2025 14:47:19 +0900
@@ -54,10 +59,6 @@
   - 📅 Wed, 10 Dec 2025 17:17:05 +0900
   - 📁 `posts/개발/2025-12-10_티스토리-GitHub-자동-커밋.md`
 
-- **[면접대비]** [Java Collections Framework](https://junsseok.tistory.com/56)
-  - 📅 Tue, 9 Dec 2025 17:30:48 +0900
-  - 📁 `posts/면접대비/2025-12-09_Java-Collections-Framework.md`
-
 
 ## 📂 카테고리별 포스트
 
@@ -80,6 +81,14 @@
 - [Decision Log(리액트 프로젝트) 구상](https://junsseok.tistory.com/49)
   - 📅 Tue, 2 Dec 2025 15:28:07 +0900
   - 📁 `posts/React/2025-12-02_Decision-Log(리액트-프로젝트)-구상.md`
+
+### 📌 Spring Boot
+
+> 1개의 포스트
+
+- [IoC와 DI](https://junsseok.tistory.com/67)
+  - 📅 Tue, 23 Dec 2025 17:30:24 +0900
+  - 📁 `posts/Spring-Boot/2025-12-23_IoC와-DI.md`
 
 ### 📌 개발
 
@@ -332,8 +341,8 @@
 
 ## 📊 통계
 
-- 총 포스트: **61개**
-- 총 카테고리: **6개**
+- 총 포스트: **62개**
+- 총 카테고리: **7개**
 
 ### 카테고리별 포스트 수
 
@@ -341,6 +350,7 @@
 |---------|----------|
 | Java Script | 1개 |
 | React | 2개 |
+| Spring Boot | 1개 |
 | 개발 | 1개 |
 | 면접대비 | 15개 |
 | 수강 일지 | 36개 |
