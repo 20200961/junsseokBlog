@@ -515,23 +515,23 @@
   },
   "https://junsseok.tistory.com/60": {
     "title": "자바 빌더 패턴(Builder Pattern)",
-    "category": "면접대비",
+    "category": "JAVA",
     "published": "Fri, 12 Dec 2025 17:18:55 +0900",
     "timestamp": 1765527535.0,
     "link": "https://junsseok.tistory.com/60",
     "filename": "2025-12-12_자바-빌더-패턴(Builder-Pattern).md",
-    "folder": "면접대비",
-    "backed_up_at": "2025-12-12T08:24:38.188323"
+    "folder": "JAVA",
+    "backed_up_at": "2025-12-24T14:58:47.211679"
   },
   "https://junsseok.tistory.com/59": {
     "title": "자바의 접근제어자",
-    "category": "면접대비",
+    "category": "JAVA",
     "published": "Thu, 11 Dec 2025 16:48:45 +0900",
     "timestamp": 1765439325.0,
     "link": "https://junsseok.tistory.com/59",
     "filename": "2025-12-11_자바의-접근제어자.md",
-    "folder": "면접대비",
-    "backed_up_at": "2025-12-12T08:24:38.188512"
+    "folder": "JAVA",
+    "backed_up_at": "2025-12-24T14:58:47.211822"
   },
   "https://junsseok.tistory.com/58": {
     "title": "자바의 제네릭을 사용하는 이유",
@@ -555,43 +555,43 @@
   },
   "https://junsseok.tistory.com/62": {
     "title": "RDBMS",
-    "category": "면접대비",
+    "category": "SQL",
     "published": "Mon, 15 Dec 2025 17:45:29 +0900",
     "timestamp": 1765788329.0,
     "link": "https://junsseok.tistory.com/62",
     "filename": "2025-12-15_RDBMS.md",
-    "folder": "면접대비",
-    "backed_up_at": "2025-12-15T15:13:19.421238"
+    "folder": "SQL",
+    "backed_up_at": "2025-12-24T14:58:47.211509"
   },
   "https://junsseok.tistory.com/63": {
     "title": "캡슐화 &amp; 정보은닉",
-    "category": "면접대비",
+    "category": "JAVA",
     "published": "Wed, 17 Dec 2025 17:41:17 +0900",
     "timestamp": 1765960877.0,
     "link": "https://junsseok.tistory.com/63",
     "filename": "2025-12-17_캡슐화-&amp;-정보은닉.md",
-    "folder": "면접대비",
-    "backed_up_at": "2025-12-17T15:00:59.506543"
+    "folder": "JAVA",
+    "backed_up_at": "2025-12-24T14:58:47.211367"
   },
   "https://junsseok.tistory.com/64": {
     "title": "정규화란?",
-    "category": "면접대비",
+    "category": "SQL",
     "published": "Thu, 18 Dec 2025 14:47:17 +0900",
     "timestamp": 1766036837.0,
     "link": "https://junsseok.tistory.com/64",
     "filename": "2025-12-18_정규화란.md",
-    "folder": "면접대비",
-    "backed_up_at": "2025-12-18T15:00:29.087578"
+    "folder": "SQL",
+    "backed_up_at": "2025-12-24T14:58:47.211178"
   },
   "https://junsseok.tistory.com/65": {
     "title": "트랜잭션",
-    "category": "uncategorized",
+    "category": "SQL",
     "published": "Fri, 19 Dec 2025 17:46:54 +0900",
     "timestamp": 1766134014.0,
     "link": "https://junsseok.tistory.com/65",
     "filename": "2025-12-19_트랜잭션.md",
-    "folder": "uncategorized",
-    "backed_up_at": "2025-12-19T14:59:12.860879"
+    "folder": "SQL",
+    "backed_up_at": "2025-12-24T14:58:47.211019"
   },
   "https://junsseok.tistory.com/66": {
     "title": "국비 2025/12/22 피드백",
@@ -612,5 +612,15 @@
     "filename": "2025-12-23_IoC와-DI.md",
     "folder": "Spring-Boot",
     "backed_up_at": "2025-12-23T14:59:06.834514"
+  },
+  "https://junsseok.tistory.com/68": {
+    "title": "Spring Framework란?",
+    "category": "Spring Boot",
+    "published": "Wed, 24 Dec 2025 14:19:50 +0900",
+    "timestamp": 1766553590.0,
+    "link": "https://junsseok.tistory.com/68",
+    "filename": "2025-12-24_Spring-Framework란.md",
+    "folder": "Spring-Boot",
+    "backed_up_at": "2025-12-24T14:58:47.210633"
   }
 }

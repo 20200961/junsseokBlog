@@ -1,23 +1,29 @@
 # Tistory 블로그 백업
 
-총 62개의 포스트가 백업되었습니다.
+총 63개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2025-12-23 14:59:06
+마지막 업데이트: 2025-12-24 14:58:47
 
 ## 📑 목차
 
 - [최근 포스트](#-최근-포스트-최신순)
 - [카테고리별 포스트](#-카테고리별-포스트)
+  - [JAVA (3개)](#-java)
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
-  - [Spring Boot (1개)](#-spring-boot)
-  - [uncategorized (6개)](#-uncategorized)
+  - [SQL (3개)](#-sql)
+  - [Spring Boot (2개)](#-spring-boot)
+  - [uncategorized (5개)](#-uncategorized)
   - [개발 (1개)](#-개발)
-  - [면접대비 (15개)](#-면접대비)
+  - [면접대비 (10개)](#-면접대비)
   - [수강 일지 (36개)](#-수강-일지)
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[Spring Boot]** [Spring Framework란?](https://junsseok.tistory.com/68)
+  - 📅 Wed, 24 Dec 2025 14:19:50 +0900
+  - 📁 `posts/Spring-Boot/2025-12-24_Spring-Framework란.md`
 
 - **[Spring Boot]** [IoC와 DI](https://junsseok.tistory.com/67)
   - 📅 Tue, 23 Dec 2025 17:30:24 +0900
@@ -27,40 +33,52 @@
   - 📅 Mon, 22 Dec 2025 14:47:19 +0900
   - 📁 `posts/uncategorized/2025-12-22_국비-20251222-피드백.md`
 
-- **[uncategorized]** [트랜잭션](https://junsseok.tistory.com/65)
+- **[SQL]** [트랜잭션](https://junsseok.tistory.com/65)
   - 📅 Fri, 19 Dec 2025 17:46:54 +0900
-  - 📁 `posts/uncategorized/2025-12-19_트랜잭션.md`
+  - 📁 `posts/SQL/2025-12-19_트랜잭션.md`
 
-- **[면접대비]** [정규화란?](https://junsseok.tistory.com/64)
+- **[SQL]** [정규화란?](https://junsseok.tistory.com/64)
   - 📅 Thu, 18 Dec 2025 14:47:17 +0900
-  - 📁 `posts/면접대비/2025-12-18_정규화란.md`
+  - 📁 `posts/SQL/2025-12-18_정규화란.md`
 
-- **[면접대비]** [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
+- **[JAVA]** [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
   - 📅 Wed, 17 Dec 2025 17:41:17 +0900
-  - 📁 `posts/면접대비/2025-12-17_캡슐화-&amp;-정보은닉.md`
+  - 📁 `posts/JAVA/2025-12-17_캡슐화-&amp;-정보은닉.md`
 
-- **[면접대비]** [RDBMS](https://junsseok.tistory.com/62)
+- **[SQL]** [RDBMS](https://junsseok.tistory.com/62)
   - 📅 Mon, 15 Dec 2025 17:45:29 +0900
-  - 📁 `posts/면접대비/2025-12-15_RDBMS.md`
+  - 📁 `posts/SQL/2025-12-15_RDBMS.md`
 
-- **[면접대비]** [자바 빌더 패턴(Builder Pattern)](https://junsseok.tistory.com/60)
+- **[JAVA]** [자바 빌더 패턴(Builder Pattern)](https://junsseok.tistory.com/60)
   - 📅 Fri, 12 Dec 2025 17:18:55 +0900
-  - 📁 `posts/면접대비/2025-12-12_자바-빌더-패턴(Builder-Pattern).md`
+  - 📁 `posts/JAVA/2025-12-12_자바-빌더-패턴(Builder-Pattern).md`
 
-- **[면접대비]** [자바의 접근제어자](https://junsseok.tistory.com/59)
+- **[JAVA]** [자바의 접근제어자](https://junsseok.tistory.com/59)
   - 📅 Thu, 11 Dec 2025 16:48:45 +0900
-  - 📁 `posts/면접대비/2025-12-11_자바의-접근제어자.md`
+  - 📁 `posts/JAVA/2025-12-11_자바의-접근제어자.md`
 
 - **[면접대비]** [자바의 제네릭을 사용하는 이유](https://junsseok.tistory.com/58)
   - 📅 Wed, 10 Dec 2025 17:31:51 +0900
   - 📁 `posts/면접대비/2025-12-10_자바의-제네릭을-사용하는-이유.md`
 
-- **[개발]** [티스토리 GitHub 자동 커밋](https://junsseok.tistory.com/57)
-  - 📅 Wed, 10 Dec 2025 17:17:05 +0900
-  - 📁 `posts/개발/2025-12-10_티스토리-GitHub-자동-커밋.md`
-
 
 ## 📂 카테고리별 포스트
+
+### 📌 JAVA
+
+> 3개의 포스트
+
+- [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
+  - 📅 Wed, 17 Dec 2025 17:41:17 +0900
+  - 📁 `posts/JAVA/2025-12-17_캡슐화-&amp;-정보은닉.md`
+
+- [자바 빌더 패턴(Builder Pattern)](https://junsseok.tistory.com/60)
+  - 📅 Fri, 12 Dec 2025 17:18:55 +0900
+  - 📁 `posts/JAVA/2025-12-12_자바-빌더-패턴(Builder-Pattern).md`
+
+- [자바의 접근제어자](https://junsseok.tistory.com/59)
+  - 📅 Thu, 11 Dec 2025 16:48:45 +0900
+  - 📁 `posts/JAVA/2025-12-11_자바의-접근제어자.md`
 
 ### 📌 Java Script
 
@@ -82,9 +100,29 @@
   - 📅 Tue, 2 Dec 2025 15:28:07 +0900
   - 📁 `posts/React/2025-12-02_Decision-Log(리액트-프로젝트)-구상.md`
 
+### 📌 SQL
+
+> 3개의 포스트
+
+- [트랜잭션](https://junsseok.tistory.com/65)
+  - 📅 Fri, 19 Dec 2025 17:46:54 +0900
+  - 📁 `posts/SQL/2025-12-19_트랜잭션.md`
+
+- [정규화란?](https://junsseok.tistory.com/64)
+  - 📅 Thu, 18 Dec 2025 14:47:17 +0900
+  - 📁 `posts/SQL/2025-12-18_정규화란.md`
+
+- [RDBMS](https://junsseok.tistory.com/62)
+  - 📅 Mon, 15 Dec 2025 17:45:29 +0900
+  - 📁 `posts/SQL/2025-12-15_RDBMS.md`
+
 ### 📌 Spring Boot
 
-> 1개의 포스트
+> 2개의 포스트
+
+- [Spring Framework란?](https://junsseok.tistory.com/68)
+  - 📅 Wed, 24 Dec 2025 14:19:50 +0900
+  - 📁 `posts/Spring-Boot/2025-12-24_Spring-Framework란.md`
 
 - [IoC와 DI](https://junsseok.tistory.com/67)
   - 📅 Tue, 23 Dec 2025 17:30:24 +0900
@@ -100,27 +138,7 @@
 
 ### 📌 면접대비
 
-> 15개의 포스트
-
-- [정규화란?](https://junsseok.tistory.com/64)
-  - 📅 Thu, 18 Dec 2025 14:47:17 +0900
-  - 📁 `posts/면접대비/2025-12-18_정규화란.md`
-
-- [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
-  - 📅 Wed, 17 Dec 2025 17:41:17 +0900
-  - 📁 `posts/면접대비/2025-12-17_캡슐화-&amp;-정보은닉.md`
-
-- [RDBMS](https://junsseok.tistory.com/62)
-  - 📅 Mon, 15 Dec 2025 17:45:29 +0900
-  - 📁 `posts/면접대비/2025-12-15_RDBMS.md`
-
-- [자바 빌더 패턴(Builder Pattern)](https://junsseok.tistory.com/60)
-  - 📅 Fri, 12 Dec 2025 17:18:55 +0900
-  - 📁 `posts/면접대비/2025-12-12_자바-빌더-패턴(Builder-Pattern).md`
-
-- [자바의 접근제어자](https://junsseok.tistory.com/59)
-  - 📅 Thu, 11 Dec 2025 16:48:45 +0900
-  - 📁 `posts/면접대비/2025-12-11_자바의-접근제어자.md`
+> 10개의 포스트
 
 - [자바의 제네릭을 사용하는 이유](https://junsseok.tistory.com/58)
   - 📅 Wed, 10 Dec 2025 17:31:51 +0900
@@ -312,15 +330,11 @@
 
 ### 📌 uncategorized
 
-> 6개의 포스트
+> 5개의 포스트
 
 - [국비 2025/12/22 피드백](https://junsseok.tistory.com/66)
   - 📅 Mon, 22 Dec 2025 14:47:19 +0900
   - 📁 `posts/uncategorized/2025-12-22_국비-20251222-피드백.md`
-
-- [트랜잭션](https://junsseok.tistory.com/65)
-  - 📅 Fri, 19 Dec 2025 17:46:54 +0900
-  - 📁 `posts/uncategorized/2025-12-19_트랜잭션.md`
 
 - [리액트 실습(유저 관리)](https://junsseok.tistory.com/45)
   - 📅 Thu, 27 Nov 2025 17:49:27 +0900
@@ -341,17 +355,19 @@
 
 ## 📊 통계
 
-- 총 포스트: **62개**
-- 총 카테고리: **7개**
+- 총 포스트: **63개**
+- 총 카테고리: **9개**
 
 ### 카테고리별 포스트 수
 
 | 카테고리 | 포스트 수 |
 |---------|----------|
+| JAVA | 3개 |
 | Java Script | 1개 |
 | React | 2개 |
-| Spring Boot | 1개 |
+| SQL | 3개 |
+| Spring Boot | 2개 |
 | 개발 | 1개 |
-| 면접대비 | 15개 |
+| 면접대비 | 10개 |
 | 수강 일지 | 36개 |
-| uncategorized | 6개 |
+| uncategorized | 5개 |
