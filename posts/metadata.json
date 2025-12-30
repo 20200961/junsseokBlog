@@ -635,12 +635,22 @@
   },
   "https://junsseok.tistory.com/70": {
     "title": "Spring Bean 어노테이션",
-    "category": "uncategorized",
+    "category": "Spring Boot",
     "published": "Sat, 27 Dec 2025 13:24:07 +0900",
     "timestamp": 1766809447.0,
     "link": "https://junsseok.tistory.com/70",
     "filename": "2025-12-27_Spring-Bean-어노테이션.md",
-    "folder": "uncategorized",
-    "backed_up_at": "2025-12-27T14:59:12.426057"
+    "folder": "Spring-Boot",
+    "backed_up_at": "2025-12-30T14:58:42.801720"
+  },
+  "https://junsseok.tistory.com/71": {
+    "title": "Spring 예외 처리 방식",
+    "category": "Spring Boot",
+    "published": "Tue, 30 Dec 2025 17:45:05 +0900",
+    "timestamp": 1767084305.0,
+    "link": "https://junsseok.tistory.com/71",
+    "filename": "2025-12-30_Spring-예외-처리-방식.md",
+    "folder": "Spring-Boot",
+    "backed_up_at": "2025-12-30T14:58:42.801547"
   }
 }

@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 65개의 포스트가 백업되었습니다.
+총 66개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2025-12-29 14:58:35
+마지막 업데이트: 2025-12-30 14:58:42
 
 ## 📑 목차
 
@@ -12,8 +12,8 @@
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
   - [SQL (3개)](#-sql)
-  - [Spring Boot (3개)](#-spring-boot)
-  - [uncategorized (6개)](#-uncategorized)
+  - [Spring Boot (5개)](#-spring-boot)
+  - [uncategorized (5개)](#-uncategorized)
   - [개발 (1개)](#-개발)
   - [면접대비 (10개)](#-면접대비)
   - [수강 일지 (36개)](#-수강-일지)
@@ -21,9 +21,13 @@
 
 ## 📝 최근 포스트 (최신순)
 
-- **[uncategorized]** [Spring Bean 어노테이션](https://junsseok.tistory.com/70)
+- **[Spring Boot]** [Spring 예외 처리 방식](https://junsseok.tistory.com/71)
+  - 📅 Tue, 30 Dec 2025 17:45:05 +0900
+  - 📁 `posts/Spring-Boot/2025-12-30_Spring-예외-처리-방식.md`
+
+- **[Spring Boot]** [Spring Bean 어노테이션](https://junsseok.tistory.com/70)
   - 📅 Sat, 27 Dec 2025 13:24:07 +0900
-  - 📁 `posts/uncategorized/2025-12-27_Spring-Bean-어노테이션.md`
+  - 📁 `posts/Spring-Boot/2025-12-27_Spring-Bean-어노테이션.md`
 
 - **[Spring Boot]** [Spring Bean](https://junsseok.tistory.com/69)
   - 📅 Fri, 26 Dec 2025 14:49:48 +0900
@@ -56,10 +60,6 @@
 - **[SQL]** [RDBMS](https://junsseok.tistory.com/62)
   - 📅 Mon, 15 Dec 2025 17:45:29 +0900
   - 📁 `posts/SQL/2025-12-15_RDBMS.md`
-
-- **[JAVA]** [자바 빌더 패턴(Builder Pattern)](https://junsseok.tistory.com/60)
-  - 📅 Fri, 12 Dec 2025 17:18:55 +0900
-  - 📁 `posts/JAVA/2025-12-12_자바-빌더-패턴(Builder-Pattern).md`
 
 
 ## 📂 카테고리별 포스트
@@ -118,7 +118,15 @@
 
 ### 📌 Spring Boot
 
-> 3개의 포스트
+> 5개의 포스트
+
+- [Spring 예외 처리 방식](https://junsseok.tistory.com/71)
+  - 📅 Tue, 30 Dec 2025 17:45:05 +0900
+  - 📁 `posts/Spring-Boot/2025-12-30_Spring-예외-처리-방식.md`
+
+- [Spring Bean 어노테이션](https://junsseok.tistory.com/70)
+  - 📅 Sat, 27 Dec 2025 13:24:07 +0900
+  - 📁 `posts/Spring-Boot/2025-12-27_Spring-Bean-어노테이션.md`
 
 - [Spring Bean](https://junsseok.tistory.com/69)
   - 📅 Fri, 26 Dec 2025 14:49:48 +0900
@@ -334,11 +342,7 @@
 
 ### 📌 uncategorized
 
-> 6개의 포스트
-
-- [Spring Bean 어노테이션](https://junsseok.tistory.com/70)
-  - 📅 Sat, 27 Dec 2025 13:24:07 +0900
-  - 📁 `posts/uncategorized/2025-12-27_Spring-Bean-어노테이션.md`
+> 5개의 포스트
 
 - [국비 2025/12/22 피드백](https://junsseok.tistory.com/66)
   - 📅 Mon, 22 Dec 2025 14:47:19 +0900
@@ -363,7 +367,7 @@
 
 ## 📊 통계
 
-- 총 포스트: **65개**
+- 총 포스트: **66개**
 - 총 카테고리: **9개**
 
 ### 카테고리별 포스트 수
@@ -374,8 +378,8 @@
 | Java Script | 1개 |
 | React | 2개 |
 | SQL | 3개 |
-| Spring Boot | 3개 |
+| Spring Boot | 5개 |
 | 개발 | 1개 |
 | 면접대비 | 10개 |
 | 수강 일지 | 36개 |
-| uncategorized | 6개 |
+| uncategorized | 5개 |
