@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 66개의 포스트가 백업되었습니다.
+총 67개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2026-01-02 14:58:34
+마지막 업데이트: 2026-01-03 14:59:02
 
 ## 📑 목차
 
@@ -12,7 +12,7 @@
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
   - [SQL (3개)](#-sql)
-  - [Spring Boot (5개)](#-spring-boot)
+  - [Spring Boot (6개)](#-spring-boot)
   - [uncategorized (5개)](#-uncategorized)
   - [개발 (1개)](#-개발)
   - [면접대비 (10개)](#-면접대비)
@@ -20,6 +20,10 @@
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[Spring Boot]** [@SpringBootApplication이 필요한 이유](https://junsseok.tistory.com/72)
+  - 📅 Sat, 3 Jan 2026 20:39:35 +0900
+  - 📁 `posts/Spring-Boot/2026-01-03_@SpringBootApplication이-필요한-이유.md`
 
 - **[Spring Boot]** [Spring 예외 처리 방식](https://junsseok.tistory.com/71)
   - 📅 Tue, 30 Dec 2025 17:45:05 +0900
@@ -56,10 +60,6 @@
 - **[JAVA]** [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
   - 📅 Wed, 17 Dec 2025 17:41:17 +0900
   - 📁 `posts/JAVA/2025-12-17_캡슐화-&amp;-정보은닉.md`
-
-- **[SQL]** [RDBMS](https://junsseok.tistory.com/62)
-  - 📅 Mon, 15 Dec 2025 17:45:29 +0900
-  - 📁 `posts/SQL/2025-12-15_RDBMS.md`
 
 
 ## 📂 카테고리별 포스트
@@ -118,7 +118,11 @@
 
 ### 📌 Spring Boot
 
-> 5개의 포스트
+> 6개의 포스트
+
+- [@SpringBootApplication이 필요한 이유](https://junsseok.tistory.com/72)
+  - 📅 Sat, 3 Jan 2026 20:39:35 +0900
+  - 📁 `posts/Spring-Boot/2026-01-03_@SpringBootApplication이-필요한-이유.md`
 
 - [Spring 예외 처리 방식](https://junsseok.tistory.com/71)
   - 📅 Tue, 30 Dec 2025 17:45:05 +0900
@@ -367,7 +371,7 @@
 
 ## 📊 통계
 
-- 총 포스트: **66개**
+- 총 포스트: **67개**
 - 총 카테고리: **9개**
 
 ### 카테고리별 포스트 수
@@ -378,7 +382,7 @@
 | Java Script | 1개 |
 | React | 2개 |
 | SQL | 3개 |
-| Spring Boot | 5개 |
+| Spring Boot | 6개 |
 | 개발 | 1개 |
 | 면접대비 | 10개 |
 | 수강 일지 | 36개 |
