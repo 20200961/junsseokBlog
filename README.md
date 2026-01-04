@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 67개의 포스트가 백업되었습니다.
+총 68개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2026-01-03 14:59:02
+마지막 업데이트: 2026-01-04 14:58:54
 
 ## 📑 목차
 
@@ -12,7 +12,7 @@
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
   - [SQL (3개)](#-sql)
-  - [Spring Boot (6개)](#-spring-boot)
+  - [Spring Boot (7개)](#-spring-boot)
   - [uncategorized (5개)](#-uncategorized)
   - [개발 (1개)](#-개발)
   - [면접대비 (10개)](#-면접대비)
@@ -20,6 +20,10 @@
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[Spring Boot]** [RESTful 설계방식](https://junsseok.tistory.com/73)
+  - 📅 Sun, 4 Jan 2026 20:11:43 +0900
+  - 📁 `posts/Spring-Boot/2026-01-04_RESTful-설계방식.md`
 
 - **[Spring Boot]** [@SpringBootApplication이 필요한 이유](https://junsseok.tistory.com/72)
   - 📅 Sat, 3 Jan 2026 20:39:35 +0900
@@ -56,10 +60,6 @@
 - **[SQL]** [정규화란?](https://junsseok.tistory.com/64)
   - 📅 Thu, 18 Dec 2025 14:47:17 +0900
   - 📁 `posts/SQL/2025-12-18_정규화란.md`
-
-- **[JAVA]** [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
-  - 📅 Wed, 17 Dec 2025 17:41:17 +0900
-  - 📁 `posts/JAVA/2025-12-17_캡슐화-&amp;-정보은닉.md`
 
 
 ## 📂 카테고리별 포스트
@@ -118,7 +118,11 @@
 
 ### 📌 Spring Boot
 
-> 6개의 포스트
+> 7개의 포스트
+
+- [RESTful 설계방식](https://junsseok.tistory.com/73)
+  - 📅 Sun, 4 Jan 2026 20:11:43 +0900
+  - 📁 `posts/Spring-Boot/2026-01-04_RESTful-설계방식.md`
 
 - [@SpringBootApplication이 필요한 이유](https://junsseok.tistory.com/72)
   - 📅 Sat, 3 Jan 2026 20:39:35 +0900
@@ -371,7 +375,7 @@
 
 ## 📊 통계
 
-- 총 포스트: **67개**
+- 총 포스트: **68개**
 - 총 카테고리: **9개**
 
 ### 카테고리별 포스트 수
@@ -382,7 +386,7 @@
 | Java Script | 1개 |
 | React | 2개 |
 | SQL | 3개 |
-| Spring Boot | 6개 |
+| Spring Boot | 7개 |
 | 개발 | 1개 |
 | 면접대비 | 10개 |
 | 수강 일지 | 36개 |
