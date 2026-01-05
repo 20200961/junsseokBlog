@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 68개의 포스트가 백업되었습니다.
+총 69개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2026-01-04 14:58:54
+마지막 업데이트: 2026-01-05 15:01:49
 
 ## 📑 목차
 
@@ -12,7 +12,7 @@
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
   - [SQL (3개)](#-sql)
-  - [Spring Boot (7개)](#-spring-boot)
+  - [Spring Boot (8개)](#-spring-boot)
   - [uncategorized (5개)](#-uncategorized)
   - [개발 (1개)](#-개발)
   - [면접대비 (10개)](#-면접대비)
@@ -20,6 +20,10 @@
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[Spring Boot]** [Session vs Token 로그인 방식](https://junsseok.tistory.com/74)
+  - 📅 Mon, 5 Jan 2026 17:44:36 +0900
+  - 📁 `posts/Spring-Boot/2026-01-05_Session-vs-Token-로그인-방식.md`
 
 - **[Spring Boot]** [RESTful 설계방식](https://junsseok.tistory.com/73)
   - 📅 Sun, 4 Jan 2026 20:11:43 +0900
@@ -56,10 +60,6 @@
 - **[SQL]** [트랜잭션](https://junsseok.tistory.com/65)
   - 📅 Fri, 19 Dec 2025 17:46:54 +0900
   - 📁 `posts/SQL/2025-12-19_트랜잭션.md`
-
-- **[SQL]** [정규화란?](https://junsseok.tistory.com/64)
-  - 📅 Thu, 18 Dec 2025 14:47:17 +0900
-  - 📁 `posts/SQL/2025-12-18_정규화란.md`
 
 
 ## 📂 카테고리별 포스트
@@ -118,7 +118,11 @@
 
 ### 📌 Spring Boot
 
-> 7개의 포스트
+> 8개의 포스트
+
+- [Session vs Token 로그인 방식](https://junsseok.tistory.com/74)
+  - 📅 Mon, 5 Jan 2026 17:44:36 +0900
+  - 📁 `posts/Spring-Boot/2026-01-05_Session-vs-Token-로그인-방식.md`
 
 - [RESTful 설계방식](https://junsseok.tistory.com/73)
   - 📅 Sun, 4 Jan 2026 20:11:43 +0900
@@ -375,7 +379,7 @@
 
 ## 📊 통계
 
-- 총 포스트: **68개**
+- 총 포스트: **69개**
 - 총 카테고리: **9개**
 
 ### 카테고리별 포스트 수
@@ -386,7 +390,7 @@
 | Java Script | 1개 |
 | React | 2개 |
 | SQL | 3개 |
-| Spring Boot | 7개 |
+| Spring Boot | 8개 |
 | 개발 | 1개 |
 | 면접대비 | 10개 |
 | 수강 일지 | 36개 |

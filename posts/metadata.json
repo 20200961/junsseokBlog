@@ -672,5 +672,15 @@
     "filename": "2026-01-04_RESTful-설계방식.md",
     "folder": "Spring-Boot",
     "backed_up_at": "2026-01-04T14:58:54.753287"
+  },
+  "https://junsseok.tistory.com/74": {
+    "title": "Session vs Token 로그인 방식",
+    "category": "Spring Boot",
+    "published": "Mon, 5 Jan 2026 17:44:36 +0900",
+    "timestamp": 1767602676.0,
+    "link": "https://junsseok.tistory.com/74",
+    "filename": "2026-01-05_Session-vs-Token-로그인-방식.md",
+    "folder": "Spring-Boot",
+    "backed_up_at": "2026-01-05T15:01:49.857619"
   }
 }
