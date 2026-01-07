@@ -682,5 +682,15 @@
     "filename": "2026-01-05_Session-vs-Token-로그인-방식.md",
     "folder": "Spring-Boot",
     "backed_up_at": "2026-01-05T15:01:49.857619"
+  },
+  "https://junsseok.tistory.com/75": {
+    "title": "JPA",
+    "category": "Spring Boot",
+    "published": "Wed, 7 Jan 2026 17:11:56 +0900",
+    "timestamp": 1767773516.0,
+    "link": "https://junsseok.tistory.com/75",
+    "filename": "2026-01-07_JPA.md",
+    "folder": "Spring-Boot",
+    "backed_up_at": "2026-01-07T15:01:22.665800"
   }
 }
