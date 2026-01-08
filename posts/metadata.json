@@ -692,5 +692,15 @@
     "filename": "2026-01-07_JPA.md",
     "folder": "Spring-Boot",
     "backed_up_at": "2026-01-07T15:01:22.665800"
+  },
+  "https://junsseok.tistory.com/76": {
+    "title": "웹서버와 WAS",
+    "category": "Spring Boot",
+    "published": "Thu, 8 Jan 2026 11:17:34 +0900",
+    "timestamp": 1767838654.0,
+    "link": "https://junsseok.tistory.com/76",
+    "filename": "2026-01-08_웹서버와-WAS.md",
+    "folder": "Spring-Boot",
+    "backed_up_at": "2026-01-08T15:12:23.377852"
   }
 }
