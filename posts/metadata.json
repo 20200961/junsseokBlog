@@ -732,5 +732,15 @@
     "filename": "2026-01-18_DNS.md",
     "folder": "AWS",
     "backed_up_at": "2026-01-18T14:58:48.714944"
+  },
+  "https://junsseok.tistory.com/80": {
+    "title": "쿠키와 세션",
+    "category": "수강 일지",
+    "published": "Sun, 25 Jan 2026 22:32:13 +0900",
+    "timestamp": 1769347933.0,
+    "link": "https://junsseok.tistory.com/80",
+    "filename": "2026-01-25_쿠키와-세션.md",
+    "folder": "수강-일지",
+    "backed_up_at": "2026-01-25T14:58:45.951355"
   }
 }
