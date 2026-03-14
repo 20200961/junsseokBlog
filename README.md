@@ -1,15 +1,15 @@
 # Tistory 블로그 백업
 
-총 76개의 포스트가 백업되었습니다.
+총 77개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2026-03-13 15:30:20
+마지막 업데이트: 2026-03-14 15:14:09
 
 ## 📑 목차
 
 - [최근 포스트](#-최근-포스트-최신순)
 - [카테고리별 포스트](#-카테고리별-포스트)
   - [AWS (1개)](#-aws)
-  - [JAVA (3개)](#-java)
+  - [JAVA (4개)](#-java)
   - [Java Script (1개)](#-java-script)
   - [React (2개)](#-react)
   - [SQL (3개)](#-sql)
@@ -21,6 +21,10 @@
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[JAVA]** [전자정부 프레임워크](https://junsseok.tistory.com/82)
+  - 📅 Sat, 14 Mar 2026 15:52:50 +0900
+  - 📁 `posts/JAVA/2026-03-14_전자정부-프레임워크.md`
 
 - **[수강 일지]** [수료 후 계획](https://junsseok.tistory.com/81)
   - 📅 Sun, 8 Mar 2026 16:28:37 +0900
@@ -58,10 +62,6 @@
   - 📅 Sun, 4 Jan 2026 20:11:43 +0900
   - 📁 `posts/Spring-Boot/2026-01-04_RESTful-설계방식.md`
 
-- **[Spring Boot]** [@SpringBootApplication이 필요한 이유](https://junsseok.tistory.com/72)
-  - 📅 Sat, 3 Jan 2026 20:39:35 +0900
-  - 📁 `posts/Spring-Boot/2026-01-03_@SpringBootApplication이-필요한-이유.md`
-
 
 ## 📂 카테고리별 포스트
 
@@ -75,7 +75,11 @@
 
 ### 📌 JAVA
 
-> 3개의 포스트
+> 4개의 포스트
+
+- [전자정부 프레임워크](https://junsseok.tistory.com/82)
+  - 📅 Sat, 14 Mar 2026 15:52:50 +0900
+  - 📁 `posts/JAVA/2026-03-14_전자정부-프레임워크.md`
 
 - [캡슐화 &amp; 정보은닉](https://junsseok.tistory.com/63)
   - 📅 Wed, 17 Dec 2025 17:41:17 +0900
@@ -412,7 +416,7 @@
 
 ## 📊 통계
 
-- 총 포스트: **76개**
+- 총 포스트: **77개**
 - 총 카테고리: **10개**
 
 ### 카테고리별 포스트 수
@@ -420,7 +424,7 @@
 | 카테고리 | 포스트 수 |
 |---------|----------|
 | AWS | 1개 |
-| JAVA | 3개 |
+| JAVA | 4개 |
 | Java Script | 1개 |
 | React | 2개 |
 | SQL | 3개 |
