@@ -1,8 +1,8 @@
 # Tistory 블로그 백업
 
-총 77개의 포스트가 백업되었습니다.
+총 78개의 포스트가 백업되었습니다.
 
-마지막 업데이트: 2026-03-14 15:14:09
+마지막 업데이트: 2026-03-15 15:15:59
 
 ## 📑 목차
 
@@ -10,7 +10,7 @@
 - [카테고리별 포스트](#-카테고리별-포스트)
   - [AWS (1개)](#-aws)
   - [JAVA (4개)](#-java)
-  - [Java Script (1개)](#-java-script)
+  - [Java Script (2개)](#-java-script)
   - [React (2개)](#-react)
   - [SQL (3개)](#-sql)
   - [Spring Boot (11개)](#-spring-boot)
@@ -21,6 +21,10 @@
 - [통계](#-통계)
 
 ## 📝 최근 포스트 (최신순)
+
+- **[Java Script]** [Nexacro](https://junsseok.tistory.com/83)
+  - 📅 Sun, 15 Mar 2026 18:14:47 +0900
+  - 📁 `posts/Java-Script/2026-03-15_Nexacro.md`
 
 - **[JAVA]** [전자정부 프레임워크](https://junsseok.tistory.com/82)
   - 📅 Sat, 14 Mar 2026 15:52:50 +0900
@@ -58,10 +62,6 @@
   - 📅 Mon, 5 Jan 2026 17:44:36 +0900
   - 📁 `posts/Spring-Boot/2026-01-05_Session-vs-Token-로그인-방식.md`
 
-- **[Spring Boot]** [RESTful 설계방식](https://junsseok.tistory.com/73)
-  - 📅 Sun, 4 Jan 2026 20:11:43 +0900
-  - 📁 `posts/Spring-Boot/2026-01-04_RESTful-설계방식.md`
-
 
 ## 📂 카테고리별 포스트
 
@@ -95,7 +95,11 @@
 
 ### 📌 Java Script
 
-> 1개의 포스트
+> 2개의 포스트
+
+- [Nexacro](https://junsseok.tistory.com/83)
+  - 📅 Sun, 15 Mar 2026 18:14:47 +0900
+  - 📁 `posts/Java-Script/2026-03-15_Nexacro.md`
 
 - [클로저(Closure) - JS](https://junsseok.tistory.com/41)
   - 📅 Mon, 24 Nov 2025 17:47:47 +0900
@@ -416,7 +420,7 @@
 
 ## 📊 통계
 
-- 총 포스트: **77개**
+- 총 포스트: **78개**
 - 총 카테고리: **10개**
 
 ### 카테고리별 포스트 수
@@ -425,7 +429,7 @@
 |---------|----------|
 | AWS | 1개 |
 | JAVA | 4개 |
-| Java Script | 1개 |
+| Java Script | 2개 |
 | React | 2개 |
 | SQL | 3개 |
 | Spring Boot | 11개 |
